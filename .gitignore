@@ -161,5 +161,11 @@ cython_debug/
 
 
 # data
-
 /data/*
+/.checkpoints/*
+imagebind_huge.pth
+*.pth
+.checkpoints
+.checkpoints/*
+bpe
+bpe/*
