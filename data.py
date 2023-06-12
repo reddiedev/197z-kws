@@ -47,13 +47,15 @@ def waveform2melspec(waveform, sample_rate, num_mel_bins, target_length):
     p = target_length - n_frames
     # if p is too large (say >20%), flash a warning
     if abs(p) / n_frames > 0.2:
-        logging.warning(
-            "Large gap between audio n_frames(%d) and "
-            "target_length (%d). Is the audio_target_length "
-            "setting correct?",
-            n_frames,
-            target_length,
-        )
+        enable_warning = False
+        if (enable_warning):
+            logging.warning(
+                "Large gap between audio n_frames(%d) and "
+                "target_length (%d). Is the audio_target_length "
+                "setting correct?",
+                n_frames,
+                target_length,
+            )
     # cut and pad
     if p > 0:
         fbank = torch.nn.functional.pad(

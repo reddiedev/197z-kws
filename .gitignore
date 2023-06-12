@@ -167,5 +167,3 @@ imagebind_huge.pth
 *.pth
 .checkpoints
 .checkpoints/*
-bpe
-bpe/*
