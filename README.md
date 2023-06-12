@@ -40,5 +40,7 @@ jupyter labextension install jupyter-webrtc
 
 3. Run the `demo.ipynb` jupyter notebook
 
+4. View SOTA models comparison in `comparison.md`
+
 # Acknowledgements
 [Professor, Rowel Atienza](https://github.com/roatienza)
